@@ -9,7 +9,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 				"html:target/cucumbe r-report",
 				"json:target/cucumber.json"
 		},
-		 
+		 tags= "@a",
 		features= {"src/test/feature/myFeauteFile/"},
 		glue="StepDefinitions/" ,
 		dryRun=false

@@ -2,9 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Parallel testing " verbose="2" parallel="classes"
 	thread-count="10">
+	
 	<test name="Test">
 		<classes>
-			<class name="src.test.java.Runners.CukesRunner"></class>
+			<class name="Runners.CukesRunner"></class>
+			<class name="Runners.APITestingRunner"></class>
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
