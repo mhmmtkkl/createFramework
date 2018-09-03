@@ -5,18 +5,17 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
  
 
 @CucumberOptions(
+		plugin = {"pretty", 
+				"html:target/cucumbe r-report",
+				"json:target/cucumber.json"
+		},
 		 
-		 
-		features="src/test/feature/",
-		glue="src/test/java/StepDefinitions/",
+		features= {"src/test/feature/myFeauteFile/"},
+		glue="StepDefinitions/" ,
 		dryRun=false
-		
-		 
+		  
 		)
-
-
-
-
+ 
 public class CukesRunner extends AbstractTestNGCucumberTests {
 
 }
